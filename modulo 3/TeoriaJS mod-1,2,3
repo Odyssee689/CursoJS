@@ -1,0 +1,161 @@
+## Variáveis 
+ São utilizadas para referenciar espaço na memória
+ 
+ - var
+ - let 
+ - const (fica com valor imutável)
+ - string (tipo de variável para conjunto de caracteres) 'texto qualquer'
+
+ - tipagem: número ou string
+
+ - array: conjunto de valores // let d = [10, 'texto', 5, 6, 10.5] d.length 
+
+ ## Operadores 
+ - Soma +
+ - Subtração -
+ - Multiplicar *
+ - Dividir /
+ - Módulo (resto de divisão) %
+ - Math: random(), round(), sqrt(). 
+
+* Atribuição
+a = b
+a += b 
+a -= b
+a *= b 
+a /= b
+a %= b 
+Adiciona 1 ++
+Subtrai 1 --
+
+* Operadores de Comparação
+- Igual == ou === 
+- Diferente !=
+- Maior que >
+- Menor que < 
+- Maior ou igual >=
+- Menor ou igual <=
+
+## Comparadores lógicos: teste lógico, retorno booleano (true / false)
+
+==      igualdade entre sentenças (valor)
+!=      diferença entre sentenças (valor)
+===     igualdade entre sentenças (valor e tipo)
+!==     diferenças entre sentenças (valor e tipo) 
+
+* Atribuição
+
+a == b = true
+a != b = false
+
+## Operadores de lógica e junção lógica
+
+!    NÃO (NOT)
+&&   E   (AND)
+||   OU  (OR)
+
+# Exemplos: 
+
+a != b    // o valor de a é diferente de b
+x == y    // o valor e o tipo de x são diferentes de y
+!a == b   // o valor de a não é igual ao valor de b
+
+
+#### As condições lógicas são convertidas em números binários:
+
+true é equivalente a 1
+false é equivalente a 0 
+
+
+#### Operador lógico de atribuição
+
+Tem a capacidade de atribuir valor a uma variável a partir de uma condição lógica, economiza IFs
+
+Exemplo:
+
+var meuCarro = cor == "preto" ? "preto" : "branco"
+
+
+# DOM 
+- Document Object Model
+- Estrutura de um arquivo na web
+- Representa docunentos HTML ou XML
+- Interface de programação
+- NÃO é uma linguagem de programação
+- É essencial para o JS entender o modelo de páginas web
+
+## Para que serve?
+- Alterar a estrutura
+- Alterar o estilo
+- Alterar o conteúdo
+ 
+## Como?
+- Disponibilizando uma API (Application Programming Interface)
+- Rotinas e padrões estabelecidos
+- Métodos (funções)
+- Árvore de elementos
+- Seletores
+- Objetos (nós)
+
+## Exemplo HTML
+<html>
+    <head></head>
+    <body></body>
+</html>
+
+
+## Exemplo Obj
+objeto = {
+    html : {
+        head : {},
+        body : {
+            h1 : {
+
+            }
+        }
+    }
+}
+
+
+## DOM x JS
+. O DOM pode ser usado por outras linguagens
+. Sem o DOM o JS não teria noção da página
+
+### Vantagens de usar JavaScript
+- Código é executado por navegadores
+- Tornar as páginas dinâmicas
+- Evitar Requisições desnecessárias (performance)
+- SPA (Single Page Applications)
+- Reagir rapidamente a ações dos usuários
+
+### Desevantagens de usar o JavaScript
+- Código é executado por navegadores
+- O conteúdo NÃO fica visível para indexadores de busca
+- Alterações em tempo de execução não ficam salvas no documento
+
+### Exemplos
+Seleciona o objeto e diposinibiliza (métodos / funçõe).callback
+
+- document.getElementById(id)
+- document.getElementsByTagName('div')
+- document.createElement('div')
+- parentNode.appendChild(node) // html.appendChild('body')
+- element.innerHTML
+- element.style
+- element.setAttribute('name')
+- element.getAttribute('name')
+- element.addEventListener()
+- window.location
+- window.onload
+- console.log()
+- window.scrollTo(x, y)
+
+
+## Seletores
+- Tipos de seletores: Tag, ID, Class, Name, Query
+- Callback
+- getElementById()
+- getElementsByTagName()
+- getElementsByName()
+- getElementsByClassName()
+- querySelectorAll() // #id | .class
